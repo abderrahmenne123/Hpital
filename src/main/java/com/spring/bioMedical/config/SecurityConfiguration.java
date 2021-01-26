@@ -14,12 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 
-/**
- * 
- * @author Soumyadip Chowdhury
- * @github soumyadip007
- *
- */
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -34,7 +29,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-		// use jdbc authentication ... oh yeah!!!
+		// use jdbc authentication ... hhhhhh!!!
 		  auth.jdbcAuthentication().dataSource(securityDataSource)
 		  .usersByUsernameQuery(
 		   "select username,password,enabled from user where username=?")

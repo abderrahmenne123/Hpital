@@ -22,12 +22,7 @@ import com.spring.bioMedical.entity.User;
 import com.spring.bioMedical.service.EmailService;
 import com.spring.bioMedical.service.UserService;
 
-/**
- * 
- * @author Soumyadip Chowdhury
- * @github soumyadip007
- *
- */
+
 @Controller
 public class RegisterController {
 	
